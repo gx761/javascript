@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-airbnb",
-  "version": "16.1.0",
-  "description": "Airbnb's ESLint config, following our styleguide",
+  "name": "eslint-config-infoCenter",
+  "version": "1.0.0",
+  "description": "MIG infoCenter's ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
     "prelint": "editorconfig-tools check * rules/* test/*",
@@ -30,26 +30,13 @@
   "author": "Jake Teton-Landis (https://twitter.com/@jitl)",
   "contributors": [
     {
-      "name": "Jake Teton-Landis",
-      "url": "https://twitter.com/jitl"
-    },
-    {
-      "name": "Jordan Harband",
-      "email": "ljharb@gmail.com",
-      "url": "http://ljharb.codes"
-    },
-    {
-      "name": "Harrison Shoff",
-      "url": "https://twitter.com/hshoff"
+      "name": "roy guo",
+      "email": "royguo@tencent.com"
     }
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
-  },
-  "homepage": "https://github.com/airbnb/javascript",
   "dependencies": {
-    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-info-center-base": "^12.1.0",
     "object.assign": "^4.1.0",
     "object.entries": "^1.0.4"
   },
