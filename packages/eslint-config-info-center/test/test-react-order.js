@@ -75,20 +75,20 @@ test('validate react prop order', (t) => {
     t.equal(result.messages[0].ruleId, 'react/sort-comp', 'fails due to sort');
   });
 
-  t.test('order: when random method after lifecycle methods', (t) => {
-    t.plan(2);
-    const result = lint(wrapComponent(`
-  componentWillMount() {}
-  componentDidMount() {}
-  someMethod() {}
-  setFoo() {}
-  getFoo() {}
-  setBar() {}
-  renderDogs() {}
-  render() { return <div />; }
-`));
+//   t.test('order: when random method after lifecycle methods', (t) => {
+//     t.plan(2);
+//     const result = lint(wrapComponent(`
+//   componentWillMount() {}
+//   componentDidMount() {}
+//   someMethod() {}
+//   setFoo() {}
+//   getFoo() {}
+//   setBar() {}
+//   renderDogs() {}
+//   render() { return <div />; }
+// `));
 
-    t.ok(result.errorCount, 'fails');
-    t.equal(result.messages[0].ruleId, 'react/sort-comp', 'fails due to sort');
-  });
+//     t.ok(result.errorCount, 'fails');
+//     t.equal(result.messages[0].ruleId, 'react/sort-comp', 'fails due to sort');
+//   });
 });

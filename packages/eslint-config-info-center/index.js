@@ -11,5 +11,46 @@ module.exports = {
     'react/jsx-indent': [0],
     'react/jsx-indent-props': [0],
     'class-methods-use-this': [0],
+    'react/sort-comp': ['error', {
+      order: [
+        'static-methods',
+        'instance-variables',
+        'lifecycle',
+        // '/^on.+$/',
+        'getters',
+        'setters',
+        // '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+        'instance-methods',
+        'everything-else',
+        'rendering',
+      ],
+      groups: {
+        lifecycle: [
+          'displayName',
+          'propTypes',
+          'contextTypes',
+          'childContextTypes',
+          'mixins',
+          'statics',
+          'defaultProps',
+          'constructor',
+          'getDefaultProps',
+          'getInitialState',
+          'state',
+          'getChildContext',
+          'componentWillMount',
+          'componentDidMount',
+          'componentWillReceiveProps',
+          'shouldComponentUpdate',
+          'componentWillUpdate',
+          'componentDidUpdate',
+          'componentWillUnmount',
+        ],
+        rendering: [
+          '/^render.+$/',
+          'render'
+        ],
+      },
+    }],
   }
 };
