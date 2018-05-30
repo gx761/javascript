@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript"
+    "url": "https://github.com/gx761/javascript"
   },
   "keywords": [
     "eslint",
@@ -35,10 +35,7 @@
     }
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
-  },
-  "homepage": "https://github.com/airbnb/javascript",
+  "homepage": "https://github.com/gx761/javascript",
   "devDependencies": {
     "babel-preset-airbnb": "^2.4.0",
     "babel-tape-runner": "^2.0.1",
@@ -60,6 +57,7 @@
   "dependencies": {
     "eslint-restricted-globals": "^0.1.1",
     "object.assign": "^4.1.0",
-    "object.entries": "^1.0.4"
+    "object.entries": "^1.0.4",
+    "babel-eslint": "^8.2.2"
   }
 }
