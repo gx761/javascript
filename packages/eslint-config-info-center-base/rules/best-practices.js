@@ -50,7 +50,7 @@ module.exports = {
 
     // disallow lexical declarations in case/default clauses
     // https://eslint.org/docs/rules/no-case-declarations.html
-    'no-case-declarations': 'error',
+    'no-case-declarations': 'off',
 
     // disallow division operators explicitly at beginning of regular expression
     // https://eslint.org/docs/rules/no-div-regex
