@@ -127,7 +127,7 @@ module.exports = {
 
     // A non-interactive element does not support event handlers (mouse and key handlers)
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-element-interactions.md
-    'jsx-a11y/no-noninteractive-element-interactions': ['error', {
+    'jsx-a11y/no-noninteractive-element-interactions': ['off', {
       handlers: [
         'onClick',
         'onMouseDown',
@@ -191,7 +191,7 @@ module.exports = {
 
     // ensure <a> tags are valid
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/0745af376cdc8686d85a361ce36952b1fb1ccf6e/docs/rules/anchor-is-valid.md
-    'jsx-a11y/anchor-is-valid': ['error', {
+    'jsx-a11y/anchor-is-valid': ['off', {
       components: ['Link'],
       specialLink: ['to'],
       aspects: ['noHref', 'invalidHref', 'preferButton'],
